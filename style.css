@@ -7,6 +7,13 @@
 header{
     background-color: #212529;
     padding: 17px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+#header.scrolled {
+    background-color: #ff6b00; /* Scroll hone ke baad ka color */
 }
 nav{
     display: flex;
@@ -14,8 +21,9 @@ nav{
     align-items: center;
 }
 nav h3{
-    color: white;
-   font-size: 25px;
+   font-weight: bold;
+   font-size: 35px;
+   color: rgb(56, 189, 248);
 }
 nav ul{
     display: flex;
